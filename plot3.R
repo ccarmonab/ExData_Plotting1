@@ -13,7 +13,7 @@ dataset$Time <- strptime(paste(dataset$Date, dataset$Time), "%d/%m/%Y %H:%M:%S")
 dataset$Date <- as.Date(dataset$Date, "%d/%m/%Y")
 
 ## Prepare the PNG file
-png(file="plot3.png", width=480, height=480)
+png(file="plot3.png", bg = "transparent", width=480, height=480)
 
 ## In order to ensure that the day's labels appears in english, set the local to en_US
 ## First, save current system's locale
